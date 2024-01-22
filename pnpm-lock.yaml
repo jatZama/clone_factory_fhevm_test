@@ -5,9 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@openzeppelin-contracts-upgradeable':
+    specifier: link:@openzeppelin-contracts-upgradeable
+    version: link:@openzeppelin-contracts-upgradeable
   '@openzeppelin/contracts':
     specifier: ^5.0.1
     version: 5.0.1
+  '@openzeppelin/contracts-upgradeable':
+    specifier: ^5.0.1
+    version: 5.0.1(@openzeppelin/contracts@5.0.1)
 
 devDependencies:
   '@nomicfoundation/hardhat-chai-matchers':
@@ -1156,6 +1162,14 @@ packages:
       '@nomicfoundation/solidity-analyzer-win32-ia32-msvc': 0.1.1
       '@nomicfoundation/solidity-analyzer-win32-x64-msvc': 0.1.1
     dev: true
+
+  /@openzeppelin/contracts-upgradeable@5.0.1(@openzeppelin/contracts@5.0.1):
+    resolution: {integrity: sha512-MvaLoPnVcoZr/qqZP+4cl9piuR4gg0iIGgxVSZ/AL1iId3M6IdEHzz9Naw5Lirl4KKBI6ciTVnX07yL4dOMIJg==}
+    peerDependencies:
+      '@openzeppelin/contracts': 5.0.1
+    dependencies:
+      '@openzeppelin/contracts': 5.0.1
+    dev: false
 
   /@openzeppelin/contracts@5.0.1:
     resolution: {integrity: sha512-yQJaT5HDp9hYOOp4jTYxMsR02gdFZFXhewX5HW9Jo4fsqSVqqyIO/xTHdWDaKX5a3pv1txmf076Lziz+sO7L1w==}
