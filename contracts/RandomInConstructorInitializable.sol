@@ -13,7 +13,7 @@ contract RandomInConstructorInitializable is Initializable{
     }
 
     function initialize() external initializer{
-        random = TFHE.randEuint32();
+        random = TFHE.rem(TFHE.randEuint32(),100);
     }
 
     // Returns the name of the token.
